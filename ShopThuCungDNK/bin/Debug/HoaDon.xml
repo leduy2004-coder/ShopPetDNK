@@ -1,0 +1,38 @@
+﻿<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="HoaDon" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="HoaDon">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="maHD" type="xs:int" minOccurs="0" />
+                <xs:element name="maKH" type="xs:int" minOccurs="0" />
+                <xs:element name="maNV" type="xs:int" minOccurs="0" />
+                <xs:element name="trangThai" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ngayTao" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="tongTien" type="xs:decimal" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <HoaDon>
+    <maHD>1</maHD>
+    <maKH>1</maKH>
+    <maNV>1</maNV>
+    <trangThai>true</trangThai>
+    <ngayTao>2024-12-01T00:00:00+07:00</ngayTao>
+    <tongTien>8000000.00</tongTien>
+  </HoaDon>
+  <HoaDon>
+    <maHD>2</maHD>
+    <maKH>2</maKH>
+    <maNV>2</maNV>
+    <trangThai>false</trangThai>
+    <ngayTao>2024-12-02T00:00:00+07:00</ngayTao>
+    <tongTien>200000.00</tongTien>
+  </HoaDon>
+</NewDataSet>

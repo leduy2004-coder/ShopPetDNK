@@ -1,0 +1,34 @@
+﻿<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="LoaiThuCung" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="LoaiThuCung">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="maLoai" type="xs:int" minOccurs="0" />
+                <xs:element name="tenLoai" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <LoaiThuCung>
+    <maLoai>1</maLoai>
+    <tenLoai>Chó</tenLoai>
+  </LoaiThuCung>
+  <LoaiThuCung>
+    <maLoai>2</maLoai>
+    <tenLoai>Mèo</tenLoai>
+  </LoaiThuCung>
+  <LoaiThuCung>
+    <maLoai>3</maLoai>
+    <tenLoai>Th?</tenLoai>
+  </LoaiThuCung>
+  <LoaiThuCung>
+    <maLoai>4</maLoai>
+    <tenLoai>Chim</tenLoai>
+  </LoaiThuCung>
+</NewDataSet>

@@ -1,0 +1,41 @@
+﻿<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="NguoiDung" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="NguoiDung">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="maNV" type="xs:int" minOccurs="0" />
+                <xs:element name="tenNV" type="xs:string" minOccurs="0" />
+                <xs:element name="sdt" type="xs:string" minOccurs="0" />
+                <xs:element name="diaChi" type="xs:string" minOccurs="0" />
+                <xs:element name="tk" type="xs:string" minOccurs="0" />
+                <xs:element name="mk" type="xs:string" minOccurs="0" />
+                <xs:element name="maRole" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <NguoiDung>
+    <maNV>1</maNV>
+    <tenNV>Nguyễn Văn A</tenNV>
+    <sdt>091234578 </sdt>
+    <diaChi>Hà Nội</diaChi>
+    <tk>admin</tk>
+    <mk>ad123</mk>
+    <maRole>1</maRole>
+  </NguoiDung>
+  <NguoiDung>
+    <maNV>2</maNV>
+    <tenNV>Trần Thị B</tenNV>
+    <sdt>098764321 </sdt>
+    <diaChi>Hồ Chí Minh</diaChi>
+    <tk>leduy</tk>
+    <mk>ad123</mk>
+    <maRole>2</maRole>
+  </NguoiDung>
+</NewDataSet>

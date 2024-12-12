@@ -1,0 +1,32 @@
+﻿<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="NhaCungCap" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="NhaCungCap">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="maNhaCungCap" type="xs:int" minOccurs="0" />
+                <xs:element name="tenNhaCungCap" type="xs:string" minOccurs="0" />
+                <xs:element name="sdt" type="xs:string" minOccurs="0" />
+                <xs:element name="diaChi" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <NhaCungCap>
+    <maNhaCungCap>1</maNhaCungCap>
+    <tenNhaCungCap>Công ty TNHH Thức ăn Thú cưng ABC</tenNhaCungCap>
+    <sdt>0912345678</sdt>
+    <diaChi>TP. Hồ Chí Minh</diaChi>
+  </NhaCungCap>
+  <NhaCungCap>
+    <maNhaCungCap>2</maNhaCungCap>
+    <tenNhaCungCap>Công ty TNHH Thức ăn Thú cưng HAHAHA</tenNhaCungCap>
+    <sdt>0912349978</sdt>
+    <diaChi>TP. Đà Nẵng</diaChi>
+  </NhaCungCap>
+</NewDataSet>

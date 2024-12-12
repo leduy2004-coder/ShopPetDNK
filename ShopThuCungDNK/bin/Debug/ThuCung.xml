@@ -1,0 +1,59 @@
+﻿<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ThuCung" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ThuCung">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="maTC" type="xs:int" minOccurs="0" />
+                <xs:element name="maLoai" type="xs:int" minOccurs="0" />
+                <xs:element name="tuoi" type="xs:string" minOccurs="0" />
+                <xs:element name="giong" type="xs:string" minOccurs="0" />
+                <xs:element name="tinhTrang" type="xs:string" minOccurs="0" />
+                <xs:element name="maNhaCungCap" type="xs:int" minOccurs="0" />
+                <xs:element name="giaTC" type="xs:double" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ThuCung>
+    <maTC>1</maTC>
+    <maLoai>1</maLoai>
+    <tuoi>2 nam     </tuoi>
+    <giong>Golden Retriever</giong>
+    <tinhTrang>Kh?e m?nh</tinhTrang>
+    <maNhaCungCap>1</maNhaCungCap>
+    <giaTC>5000000</giaTC>
+  </ThuCung>
+  <ThuCung>
+    <maTC>2</maTC>
+    <maLoai>2</maLoai>
+    <tuoi>1 nam     </tuoi>
+    <giong>Mèo Anh lông ngắn</giong>
+    <tinhTrang>Ðã tiêm phòng d?y d?</tinhTrang>
+    <maNhaCungCap>2</maNhaCungCap>
+    <giaTC>3000000</giaTC>
+  </ThuCung>
+  <ThuCung>
+    <maTC>3</maTC>
+    <maLoai>3</maLoai>
+    <tuoi>6 tháng   </tuoi>
+    <giong>Thỏ Hà Lan</giong>
+    <tinhTrang>Kh?e m?nh</tinhTrang>
+    <maNhaCungCap>1</maNhaCungCap>
+    <giaTC>2000000</giaTC>
+  </ThuCung>
+  <ThuCung>
+    <maTC>4</maTC>
+    <maLoai>4</maLoai>
+    <tuoi>1 nam     </tuoi>
+    <giong>Chim Yến</giong>
+    <tinhTrang>Ðã tiêm phòng</tinhTrang>
+    <maNhaCungCap>2</maNhaCungCap>
+    <giaTC>1500000</giaTC>
+  </ThuCung>
+</NewDataSet>

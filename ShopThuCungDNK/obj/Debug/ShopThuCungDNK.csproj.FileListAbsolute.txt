@@ -1,0 +1,13 @@
+E:\THXML\ShopThuCungDNK\ShopThuCungDNK\bin\Debug\ShopThuCungDNK.exe.config
+E:\THXML\ShopThuCungDNK\ShopThuCungDNK\bin\Debug\ShopThuCungDNK.exe
+E:\THXML\ShopThuCungDNK\ShopThuCungDNK\bin\Debug\ShopThuCungDNK.pdb
+E:\THXML\ShopThuCungDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.csproj.AssemblyReference.cache
+E:\THXML\ShopThuCungDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.Properties.Resources.resources
+E:\THXML\ShopThuCungDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.csproj.GenerateResource.cache
+E:\THXML\ShopThuCungDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.csproj.CoreCompileInputs.cache
+E:\THXML\ShopThuCungDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.exe
+E:\THXML\ShopThuCungDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.pdb
+E:\THXML\ShopThuCungDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.GUI.frmDangNhap.resources
+E:\THXML\ShopThuCungDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.GUI.frmNhanVien.resources
+E:\THXML\ShopThuCungDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.GUI.frmNVTrangChu.resources
+E:\THXML\ShopThuCungDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.GUI.FrmQuanLy.resources

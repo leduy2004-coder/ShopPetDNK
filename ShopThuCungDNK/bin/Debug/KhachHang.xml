@@ -1,0 +1,44 @@
+﻿<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="KhachHang" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="KhachHang">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="maKH" type="xs:int" minOccurs="0" />
+                <xs:element name="tenKH" type="xs:string" minOccurs="0" />
+                <xs:element name="sdt" type="xs:string" minOccurs="0" />
+                <xs:element name="diaChi" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <KhachHang>
+    <maKH>1</maKH>
+    <tenKH>Nguyễn Văn A</tenKH>
+    <sdt>0912345678</sdt>
+    <diaChi>Hà Nội</diaChi>
+  </KhachHang>
+  <KhachHang>
+    <maKH>2</maKH>
+    <tenKH>Trần Thị B</tenKH>
+    <sdt>0987654321</sdt>
+    <diaChi>Hồ Chí Minh</diaChi>
+  </KhachHang>
+  <KhachHang>
+    <maKH>3</maKH>
+    <tenKH>Lê Văn C</tenKH>
+    <sdt>0934567890</sdt>
+    <diaChi>Đà Nẵng</diaChi>
+  </KhachHang>
+  <KhachHang>
+    <maKH>4</maKH>
+    <tenKH>Phạm Thị D</tenKH>
+    <sdt>0923456789</sdt>
+    <diaChi>Hải Phòng</diaChi>
+  </KhachHang>
+</NewDataSet>

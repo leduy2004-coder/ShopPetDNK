@@ -1,0 +1,42 @@
+﻿<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ChiTietHoaDon" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ChiTietHoaDon">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="maChiTiet" type="xs:int" minOccurs="0" />
+                <xs:element name="maHD" type="xs:int" minOccurs="0" />
+                <xs:element name="maTC" type="xs:int" minOccurs="0" />
+                <xs:element name="soLuong" type="xs:int" minOccurs="0" />
+                <xs:element name="thanhTien" type="xs:decimal" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ChiTietHoaDon>
+    <maChiTiet>1</maChiTiet>
+    <maHD>1</maHD>
+    <maTC>1</maTC>
+    <soLuong>1</soLuong>
+    <thanhTien>5000000.00</thanhTien>
+  </ChiTietHoaDon>
+  <ChiTietHoaDon>
+    <maChiTiet>2</maChiTiet>
+    <maHD>1</maHD>
+    <maTC>2</maTC>
+    <soLuong>1</soLuong>
+    <thanhTien>3000000.00</thanhTien>
+  </ChiTietHoaDon>
+  <ChiTietHoaDon>
+    <maChiTiet>3</maChiTiet>
+    <maHD>2</maHD>
+    <maTC>1</maTC>
+    <soLuong>2</soLuong>
+    <thanhTien>200000.00</thanhTien>
+  </ChiTietHoaDon>
+</NewDataSet>

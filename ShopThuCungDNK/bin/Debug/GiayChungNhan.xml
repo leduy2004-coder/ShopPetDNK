@@ -1,0 +1,52 @@
+﻿<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="GiayChungNhan" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="GiayChungNhan">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="maGiayChungNhan" type="xs:int" minOccurs="0" />
+                <xs:element name="maTC" type="xs:int" minOccurs="0" />
+                <xs:element name="loaiGiayChungNhan" type="xs:string" minOccurs="0" />
+                <xs:element name="soGiayChungNhan" type="xs:string" minOccurs="0" />
+                <xs:element name="ngayCap" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ngayHetHan" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="nguoiCap" type="xs:string" minOccurs="0" />
+                <xs:element name="chiTiet" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <GiayChungNhan>
+    <maGiayChungNhan>1</maGiayChungNhan>
+    <maTC>1</maTC>
+    <loaiGiayChungNhan>Gi?y ch?ng nh?n tiêm phòng</loaiGiayChungNhan>
+    <soGiayChungNhan>GCN12345</soGiayChungNhan>
+    <ngayCap>2024-12-01T00:00:00+07:00</ngayCap>
+    <ngayHetHan>2025-12-01T00:00:00+07:00</ngayHetHan>
+    <nguoiCap>Bác si Nguy?n Van A</nguoiCap>
+    <chiTiet>Tiêm phòng b?nh d?i, Parvo</chiTiet>
+  </GiayChungNhan>
+  <GiayChungNhan>
+    <maGiayChungNhan>2</maGiayChungNhan>
+    <maTC>2</maTC>
+    <loaiGiayChungNhan>Gi?y ki?m tra s?c kh?e</loaiGiayChungNhan>
+    <soGiayChungNhan>GCN67890</soGiayChungNhan>
+    <ngayCap>2024-12-02T00:00:00+07:00</ngayCap>
+    <nguoiCap>Bác si Tr?n Th? B</nguoiCap>
+    <chiTiet>Khám t?ng quát, không có v?n d? gì</chiTiet>
+  </GiayChungNhan>
+  <GiayChungNhan>
+    <maGiayChungNhan>3</maGiayChungNhan>
+    <maTC>3</maTC>
+    <loaiGiayChungNhan>Gi?y ch?ng nh?n ngu?n g?c</loaiGiayChungNhan>
+    <soGiayChungNhan>GCN11223</soGiayChungNhan>
+    <ngayCap>2024-12-03T00:00:00+07:00</ngayCap>
+    <nguoiCap>FCI</nguoiCap>
+    <chiTiet>Ch?ng nh?n gi?ng chó c?nh thu?n ch?ng</chiTiet>
+  </GiayChungNhan>
+</NewDataSet>
