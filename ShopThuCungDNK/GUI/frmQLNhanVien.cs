@@ -14,7 +14,7 @@ namespace ShopThuCungDNK.GUI
 {
     public partial class frmQLNhanVien : Form
     {
-        private string connectionString = "Data Source=KHANHPC\\SQLEXPRESS;Initial Catalog=SHOPTHUCUNG;Integrated Security=True;Encrypt=True";
+        private string connectionString = "Data Source=LAPTOP-F30SDEST\\SQLEXPRESS;Initial Catalog=SHOPTHUCUNG;Integrated Security=True;Encrypt=False";
         public frmQLNhanVien()
         {
             InitializeComponent();

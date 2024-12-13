@@ -1,4 +1,4 @@
-﻿<NewDataSet>
+<NewDataSet>
   <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="KhachHang" msdata:UseCurrentLocale="true">
       <xs:complexType>

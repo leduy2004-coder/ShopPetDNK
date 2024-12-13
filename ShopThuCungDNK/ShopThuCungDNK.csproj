@@ -49,6 +49,7 @@
     <Compile Include="Class\DangNhap.cs" />
     <Compile Include="Class\FileXml.cs" />
     <Compile Include="Class\HeThong.cs" />
+    <Compile Include="Class\KhachHang.cs" />
     <Compile Include="Class\Main.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -100,6 +101,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
