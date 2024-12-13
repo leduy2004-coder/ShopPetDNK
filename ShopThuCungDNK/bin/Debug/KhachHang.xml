@@ -1,4 +1,4 @@
-﻿<NewDataSet>
+<NewDataSet>
   <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="KhachHang" msdata:UseCurrentLocale="true">
       <xs:complexType>
@@ -40,5 +40,23 @@
     <tenKH>Phạm Thị D</tenKH>
     <sdt>0923456789</sdt>
     <diaChi>Hải Phòng</diaChi>
+  </KhachHang>
+  <KhachHang>
+    <maKH>0</maKH>
+    <tenKH>23</tenKH>
+    <sdt>123</sdt>
+    <diaChi>23</diaChi>
+  </KhachHang>
+  <KhachHang>
+    <maKH>0</maKH>
+    <tenKH>3231</tenKH>
+    <sdt>23</sdt>
+    <diaChi>12</diaChi>
+  </KhachHang>
+  <KhachHang>
+    <maKH>5</maKH>
+    <tenKH>4242</tenKH>
+    <sdt>123123</sdt>
+    <diaChi>1231231</diaChi>
   </KhachHang>
 </NewDataSet>

@@ -16,123 +16,166 @@ namespace ShopThuCungDNK.GUI
 {
     public partial class frmNVKhachHang : Form
     {
-        KhachHang kh = new KhachHang();
         FileXml Fxml = new FileXml();
-        string MaKhachHang, TenKhachHang, Sdt, DiaChi;
+        private DataTable originalData; // Lưu trữ DataTable gốc
+        KhachHang khachhang = new KhachHang();
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        public void hienthiKhachHang()
-        {
-            DataTable dt = new DataTable();
-            dt = Fxml.HienThi("KhachHang.xml");
-            dvgKhachHang.DataSource = dt;
-
-            // Thiết lập chế độ AutoSize cho các cột fill chiều rộng của DataGridView
-            dvgKhachHang.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-        }
-
-        private void dvgKhachHang_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            int d = dvgKhachHang.CurrentRow.Index;
-            txtMaKH.Text = dvgKhachHang.Rows[d].Cells[0].Value?.ToString() ?? string.Empty;
-            txtHoTen.Text = dvgKhachHang.Rows[d].Cells[1].Value?.ToString() ?? string.Empty;
-            txtSdt.Text = dvgKhachHang.Rows[d].Cells[2].Value?.ToString() ?? string.Empty;
-            txtDiaChi.Text = dvgKhachHang.Rows[d].Cells[3].Value?.ToString() ?? string.Empty;
-
-
-        }
-
-        private void btn_insert_Click(object sender, EventArgs e)
-        {
-            LoadDuLieu();
-            if (kh.KiemTra(MaKhachHang) == true)
-            {
-                MessageBox.Show("Mã khách hàng đã tồn tại");
-            }
-            else
-            {
-                kh.ThemKhachHang(MaKhachHang, TenKhachHang, Sdt, DiaChi);
-                MessageBox.Show("Ok");
-                hienthiKhachHang();
-                txtMaKH.Focus();
-            }
-        
-        }
-
-        private void btn_update_Click(object sender, EventArgs e)
-        {
-            LoadDuLieu();
-           
-            kh.SuaKhachHang(MaKhachHang, TenKhachHang, Sdt, DiaChi);
-            MessageBox.Show("Ok");
-            hienthiKhachHang();
-        }
-
-        private void btn_delete_Click(object sender, EventArgs e)
-        {
-            kh.XoaKhachHang(MaKhachHang);
-            MessageBox.Show("Ok");
-            hienthiKhachHang();
-        }
-
-
-
-        private void btnTimKiem_Click(object sender, EventArgs e)
-        {
-            XmlReader reader = XmlReader.Create("KhachHang.xml");
-            DataSet ds = new DataSet();
-            ds.ReadXml(reader);
-            DataView dv = new DataView(ds.Tables[0]);
-            dv.Sort = "maKH";
-            reader.Close();
-            int index = dv.Find(txtTimKiem.Text);
-            if (index == -1)
-            {
-                MessageBox.Show("Không tìm thấy");
-                txtTimKiem.Text = "";
-                txtTimKiem.Focus();
-
-            }
-            else
-            {
-                DataTable dt = new DataTable();
-                dt.Columns.Add("Mã khách hàng");
-                dt.Columns.Add("Họ và tên");
-                dt.Columns.Add("SDT");
-                dt.Columns.Add("Địa chỉ");
-
-                object[] list = { dv[index]["maKH"], dv[index]["tenKH"], dv[index]["sdt"], dv[index]["diachi"]};
-                dt.Rows.Add(list);
-                dvgKhachHang.DataSource = dt;
-                txtTimKiem.Text = "";
-            }
-        }
-
-        private void tbnHienThi_Click(object sender, EventArgs e)
-        {
-            hienthiKhachHang();
-        }
-
-        public void LoadDuLieu()
-        {
-            MaKhachHang = txtMaKH.Text;
-            TenKhachHang = txtHoTen.Text;
-            Sdt = txtSdt.Text;
-            DiaChi = txtDiaChi.Text;
-        }
         public frmNVKhachHang()
         {
             InitializeComponent();
         }
         private void frmNVKhachHang_Load(object sender, EventArgs e)
         {
-            hienthiKhachHang();
-            dvgKhachHang.CellContentClick += new DataGridViewCellEventHandler(dvgKhachHang_CellContentClick);
+            HienThiKhachHang();
+        }
+
+         public void HienThiKhachHang()
+        {
+            // Lấy dữ liệu từ file XML
+            DataTable dt = Fxml.HienThi("KhachHang.xml");
+
+
+            // Cấu hình DataGridView
+            dgvKhachHang.AutoGenerateColumns = false; // Tắt tự động tạo cột
+
+            // Xóa các cột cũ nếu có
+            dgvKhachHang.Columns.Clear();
+
+            // Thêm cột với header tiếng Việt và chỉnh Width  -  DataPropertyName là tên trường
+            dgvKhachHang.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Mã khách hàng", DataPropertyName = "maKH", Name = "maKH", Width = 110 });
+            dgvKhachHang.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Họ tên", DataPropertyName = "tenKH", Width = 110 });
+            dgvKhachHang.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Số điện thoại", DataPropertyName = "sdt", Width = 80 });
+            dgvKhachHang.Columns.Add(new DataGridViewTextBoxColumn { HeaderText = "Địa chỉ", DataPropertyName = "diaChi", Width = 150 });
+          
+
+            originalData = dt.Copy();
+
+            // Gán dữ liệu vào DataGridView
+            dgvKhachHang.DataSource = dt;
+            // Thiết lập chế độ AutoSize cho các cột fill chiều rộng của DataGridView
+            dgvKhachHang.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
         }
+
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            if (originalData == null || originalData.Rows.Count == 0)
+            {
+                MessageBox.Show("Không có dữ liệu để tìm kiếm.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            // Lấy dữ liệu từ DataTable hiện tại của DataGridView
+            DataTable dt = (DataTable)dgvKhachHang.DataSource;
+
+            // Kiểm tra nếu DataTable không null và có dữ liệu
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                string maKH = txtTim.Text.Trim();
+
+                // Nếu input rỗng, hiển thị toàn bộ dữ liệu
+                if (string.IsNullOrEmpty(maKH))
+                {
+                    dgvKhachHang.DataSource = originalData.Copy();
+                    return;
+                }
+
+                // Lọc dữ liệu dựa vào mã thú cưng
+                DataView dv = dt.DefaultView;
+                dv.RowFilter = $"maKH = '{maKH}'"; // Điều kiện lọc dựa vào cột `maKH`
+
+                // Kiểm tra nếu không có kết quả phù hợp
+                if (dv.Count == 0)
+                {
+                    MessageBox.Show("Không tìm thấy khách hàng có mã phù hợp.", "Kết quả", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                // Gán dữ liệu đã lọc vào DataGridView
+                dgvKhachHang.DataSource = dv.ToTable();
+            }
+            else
+            {
+                MessageBox.Show("Không có dữ liệu để tìm kiếm.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            txtTim.Text = "";
+            txtTim.Focus();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            dialogNVKhachHang dialogNVKhachHang = new dialogNVKhachHang();
+            // Đăng ký sự kiện để khi lưu thành công thì thực hiện hành động
+            dialogNVKhachHang.OnSaveSuccess += DialogNVKhachHang_OnSaveSuccess;
+            dialogNVKhachHang.ShowDialog();
+        }
+        private void DialogNVKhachHang_OnSaveSuccess(object sender, EventArgs e)
+        {
+            HienThiKhachHang();
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            if (dgvKhachHang.SelectedRows.Count > 0)
+            {
+                // Lấy dòng được chọn trong DataGridView
+                DataGridViewRow selectedRow = dgvKhachHang.SelectedRows[0];
+
+                // Kiểm tra xem cột maKH có tồn tại
+                if (selectedRow.Cells["maKH"] != null)
+                {
+                    // Lấy giá trị của cột "maKH"
+                    string maKH = selectedRow.Cells["maKH"].Value.ToString();
+                    DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa khách hàng này?", "Xóa", MessageBoxButtons.YesNo);
+                    if (result == DialogResult.Yes)
+                    {
+                        khachhang.XoaKhachHang(maKH);
+                        HienThiKhachHang();
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("Cột 'maKH' không tồn tại trong dòng dữ liệu.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn một khách hàng để chỉnh sửa.");
+            }
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            if (dgvKhachHang.SelectedRows.Count > 0)
+            {
+                // Lấy dòng được chọn trong DataGridView
+                DataGridViewRow selectedRow = dgvKhachHang.SelectedRows[0];
+
+                // Kiểm tra xem cột maTC có tồn tại
+                if (selectedRow.Cells["maKH"] != null)
+                {
+                    // Lấy giá trị của cột "maTC"
+                    int maKH = Convert.ToInt32(selectedRow.Cells["maKH"].Value);
+
+                    // Hiển thị dialog với giá trị maThuCung
+                    dialogNVKhachHang dialog = new dialogNVKhachHang(maKH);
+                    // Đăng ký sự kiện để khi lưu thành công thì thực hiện hành động
+                    dialog.OnSaveSuccess += DialogNVKhachHang_OnSaveSuccess;
+                    dialog.ShowDialog(); // Hiển thị dialog
+                }
+                else
+                {
+                    MessageBox.Show("Cột 'maTC' không tồn tại trong dòng dữ liệu.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn một thú cưng để chỉnh sửa.");
+            }
+        }
     }
+
+
+    
 }

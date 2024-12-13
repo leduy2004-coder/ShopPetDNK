@@ -65,3 +65,5 @@ E:\THXML\ShopPetDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.csproj.GenerateResou
 E:\THXML\ShopPetDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.csproj.CoreCompileInputs.cache
 E:\THXML\ShopPetDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.exe
 E:\THXML\ShopPetDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.pdb
+C:\Users\pc\Music\xml\ShopPetDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.GUI.dialogNVThuCung.resources
+C:\Users\pc\Music\xml\ShopPetDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.GUI.dialogNVKhachHang.resources
