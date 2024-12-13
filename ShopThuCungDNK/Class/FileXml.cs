@@ -18,8 +18,7 @@ namespace QuanLySieuThi.Class
     {
 
 
-        string Conn = @"Data Source=LAPTOP-F30SDEST\SQLEXPRESS;Initial Catalog=SHOPTHUCUNG;Integrated Security=True;Encrypt=False";
-
+        string Conn = @"Data Source=DESKTOP-2NFEM03;Initial Catalog=SHOPTHUCUNG;Integrated Security=True;Encrypt=False";
 
         public DataTable HienThi(string file)
         {
@@ -126,6 +125,36 @@ namespace QuanLySieuThi.Class
             }
             return giatriB;
         }
+        public int LayMaxValueFromXml(string filePath, string tagName)
+        {
+            // Kiểm tra file XML có tồn tại không
+            if (!File.Exists(filePath))
+            {
+                return 0; // Nếu không tồn tại, trả về giá trị mặc định
+            }
+
+            XmlDocument doc = new XmlDocument();
+            doc.Load(filePath);
+
+            int maxValue = 0;
+
+            // Duyệt qua tất cả các thẻ có tên tagName trong file XML
+            XmlNodeList nodes = doc.GetElementsByTagName(tagName);
+            foreach (XmlNode node in nodes)
+            {
+                if (int.TryParse(node.InnerText, out int value))
+                {
+                    if (value > maxValue)
+                    {
+                        maxValue = value;
+                    }
+                }
+            }
+
+            return maxValue; // Trả về giá trị lớn nhất
+        }
+
+
         public void DoiMatKhau(string nguoiDung, string matKhau)
         {
             XmlDocument doc1 = new XmlDocument();

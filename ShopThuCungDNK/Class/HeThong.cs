@@ -19,6 +19,7 @@ namespace QuanLySieuThi.Class
             Fxml.TaoXML("KhachHang");
             Fxml.TaoXML("HoaDon");
             Fxml.TaoXML("LoaiThuCung");
+            Fxml.TaoXML("TinhTrang");
             Fxml.TaoXML("NhaCungCap");
             Fxml.TaoXML("ThuCung");
             Fxml.TaoXML("GiayChungNhan");
@@ -28,7 +29,7 @@ namespace QuanLySieuThi.Class
         public void TaoXMLFirst()
         {
             // Danh sách các tên bảng cần tạo XML
-            string[] bang = { "NguoiDung", "ChiTietHoaDon", "KhachHang", "HoaDon", "LoaiThuCung", "NhaCungCap", "ThuCung", "GiayChungNhan", "Role" };
+            string[] bang = { "NguoiDung", "ChiTietHoaDon", "KhachHang", "HoaDon", "LoaiThuCung", "TinhTrang", "NhaCungCap", "ThuCung", "GiayChungNhan", "Role" };
 
             // Kiểm tra và tạo các file XML nếu chúng chưa tồn tại
             foreach (var tenBang in bang)
@@ -76,6 +77,7 @@ namespace QuanLySieuThi.Class
             Fxml.InsertOrUpDateSQL("delete from LoaiThuCung");
             Fxml.InsertOrUpDateSQL("delete from NhaCungCap");
             Fxml.InsertOrUpDateSQL("delete from ThuCung");
+            Fxml.InsertOrUpDateSQL("delete from TinhTrang");
             Fxml.InsertOrUpDateSQL("delete from GiayChungNhan");
             Fxml.InsertOrUpDateSQL("delete from Role");
 
@@ -87,6 +89,7 @@ namespace QuanLySieuThi.Class
             CapNhapTungBang("LoaiThuCung");
             CapNhapTungBang("NhaCungCap");
             CapNhapTungBang("ThuCung");
+            CapNhapTungBang("TinhTrang");
             CapNhapTungBang("GiayChungNhan");
             CapNhapTungBang("Role");
         }

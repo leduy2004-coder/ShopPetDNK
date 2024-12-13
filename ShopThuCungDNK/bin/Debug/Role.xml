@@ -18,7 +18,7 @@
   </xs:schema>
   <Role>
     <maRole>1</maRole>
-    <tenRole>Qu?n lý</tenRole>
+    <tenRole>Quản lý</tenRole>
     <code>MANAGER</code>
   </Role>
   <Role>

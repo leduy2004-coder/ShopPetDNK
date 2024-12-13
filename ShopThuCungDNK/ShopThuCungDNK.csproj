@@ -51,11 +51,18 @@
     <Compile Include="Class\HeThong.cs" />
     <Compile Include="Class\KhachHang.cs" />
     <Compile Include="Class\Main.cs" />
+    <Compile Include="Class\ThuCung.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\dialogNVThuCung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\dialogNVThuCung.Designer.cs">
+      <DependentUpon>dialogNVThuCung.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmDangNhap.cs">
       <SubType>Form</SubType>
@@ -103,6 +110,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\dialogNVThuCung.resx">
+      <DependentUpon>dialogNVThuCung.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
