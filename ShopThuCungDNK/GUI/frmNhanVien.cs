@@ -60,5 +60,49 @@ namespace ShopThuCungDNK.GUI
             frmDangNhap frmDangNhap = new frmDangNhap();
             frmDangNhap.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            frmNVThuCung frmNVThuCung = new frmNVThuCung();
+            frmNVThuCung.TopLevel = false;
+
+            if (panelDesktop.Controls.Count > 0)
+            {
+                panelDesktop.Controls.Clear();
+            }
+
+            // Đặt kích thước của frmNVTrangChu bằng kích thước của panelDesktop
+            frmNVThuCung.Size = panelDesktop.ClientSize;
+
+
+            panelDesktop.Controls.Add(frmNVThuCung);
+
+            // Đảm bảo frmNVTrangChu hiển thị lên trên cùng
+            frmNVThuCung.BringToFront();
+
+            frmNVThuCung.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmNVKhachHang frmNVKhachHang = new frmNVKhachHang();
+            frmNVKhachHang.TopLevel = false;
+
+            if (panelDesktop.Controls.Count > 0)
+            {
+                panelDesktop.Controls.Clear();
+            }
+
+            // Đặt kích thước của frmNVTrangChu bằng kích thước của panelDesktop
+            frmNVKhachHang.Size = panelDesktop.ClientSize;
+
+
+            panelDesktop.Controls.Add(frmNVKhachHang);
+
+            // Đảm bảo frmNVTrangChu hiển thị lên trên cùng
+            frmNVKhachHang.BringToFront();
+
+            frmNVKhachHang.Show();
+        }
     }
 }

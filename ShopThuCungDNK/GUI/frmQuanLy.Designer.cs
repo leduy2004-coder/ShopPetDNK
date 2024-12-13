@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQuanLy));
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.panelMain = new System.Windows.Forms.Panel();
             this.panelTitleBar = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panelMenu = new System.Windows.Forms.Panel();
@@ -54,12 +55,21 @@
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.LavenderBlush;
+            this.panelDesktop.Controls.Add(this.panelMain);
             this.panelDesktop.Controls.Add(this.panelTitleBar);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(200, 0);
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(920, 673);
             this.panelDesktop.TabIndex = 5;
+            // 
+            // panelMain
+            // 
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Location = new System.Drawing.Point(0, 60);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(920, 613);
+            this.panelMain.TabIndex = 5;
             // 
             // panelTitleBar
             // 
@@ -83,7 +93,6 @@
             this.label1.Size = new System.Drawing.Size(809, 35);
             this.label1.TabIndex = 0;
             this.label1.Text = "HỆ THỐNG QUẢN LÝ SHOP THÚ CƯNG - QUẢN LÝ";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panelMenu
             // 
@@ -103,6 +112,7 @@
             // btnExit
             // 
             this.btnExit.BackColor = System.Drawing.Color.DarkViolet;
+            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExit.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -119,10 +129,12 @@
             this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.Dock = System.Windows.Forms.DockStyle.Top;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -143,6 +155,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Dock = System.Windows.Forms.DockStyle.Top;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -155,14 +168,16 @@
             this.button2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.button2.Size = new System.Drawing.Size(200, 58);
             this.button2.TabIndex = 1;
-            this.button2.Text = "  Trang chủ";
+            this.button2.Text = "  Nhân viên";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnHome
             // 
             this.btnHome.BackColor = System.Drawing.Color.Transparent;
+            this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHome.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnHome.FlatAppearance.BorderSize = 0;
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -219,7 +234,7 @@
             this.lb_Name.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lb_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Name.ForeColor = System.Drawing.Color.White;
-            this.lb_Name.Location = new System.Drawing.Point(59, 0);
+            this.lb_Name.Location = new System.Drawing.Point(34, 0);
             this.lb_Name.Name = "lb_Name";
             this.lb_Name.Size = new System.Drawing.Size(74, 25);
             this.lb_Name.TabIndex = 0;
@@ -274,5 +289,6 @@
         private System.Windows.Forms.Panel panelTitleBar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panelMain;
     }
 }

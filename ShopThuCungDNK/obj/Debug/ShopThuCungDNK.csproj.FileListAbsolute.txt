@@ -11,3 +11,6 @@ E:\THXML\ShopThuCungDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.GUI.frmDangNhap.
 E:\THXML\ShopThuCungDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.GUI.frmNhanVien.resources
 E:\THXML\ShopThuCungDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.GUI.frmNVTrangChu.resources
 E:\THXML\ShopThuCungDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.GUI.FrmQuanLy.resources
+E:\THXML\ShopThuCungDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.GUI.frmNVThuCung.resources
+E:\THXML\ShopThuCungDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.GUI.frmQLNhanVien.resources
+E:\THXML\ShopThuCungDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.GUI.frmNVKhachHang.resources
