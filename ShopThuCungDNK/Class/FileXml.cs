@@ -152,7 +152,7 @@ namespace QuanLySieuThi.Class
                 }
             }
 
-            return maxValue; // Trả về giá trị lớn nhất
+            return maxValue + 1; // Trả về giá trị lớn nhất
         }
 
 

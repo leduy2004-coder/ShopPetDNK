@@ -51,6 +51,7 @@
     <Compile Include="Class\HeThong.cs" />
     <Compile Include="Class\KhachHang.cs" />
     <Compile Include="Class\Main.cs" />
+    <Compile Include="Class\NhaCungCap.cs" />
     <Compile Include="Class\ThuCung.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -63,6 +64,12 @@
     </Compile>
     <Compile Include="GUI\dialogNVKhachHang.Designer.cs">
       <DependentUpon>dialogNVKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\dialogNVNhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\dialogNVNhaCungCap.Designer.cs">
+      <DependentUpon>dialogNVNhaCungCap.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\dialogNVThuCung.cs">
       <SubType>Form</SubType>
@@ -87,6 +94,12 @@
     </Compile>
     <Compile Include="GUI\frmNVKhachHang.Designer.cs">
       <DependentUpon>frmNVKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmNVNhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmNVNhaCungCap.Designer.cs">
+      <DependentUpon>frmNVNhaCungCap.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmNVThuCung.cs">
       <SubType>Form</SubType>
@@ -120,6 +133,9 @@
     <EmbeddedResource Include="GUI\dialogNVKhachHang.resx">
       <DependentUpon>dialogNVKhachHang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\dialogNVNhaCungCap.resx">
+      <DependentUpon>dialogNVNhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\dialogNVThuCung.resx">
       <DependentUpon>dialogNVThuCung.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmNVKhachHang.resx">
       <DependentUpon>frmNVKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmNVNhaCungCap.resx">
+      <DependentUpon>frmNVNhaCungCap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmNVThuCung.resx">
       <DependentUpon>frmNVThuCung.cs</DependentUpon>

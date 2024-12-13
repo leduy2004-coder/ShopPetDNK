@@ -91,7 +91,7 @@ namespace ShopThuCungDNK.GUI
                 }
                 else
                 {
-                    int ma = GetMaxMaKhachHang();
+                    int ma = Fxml.LayMaxValueFromXml("KhachHang.xml", "maKH");
                     // Thêm mới khách
                     khachHang.ThemKhachHang(ma.ToString(), tenKH, sdt, diachi);
                 }
@@ -130,7 +130,7 @@ namespace ShopThuCungDNK.GUI
         {
             if (isEditMode)
             {
-                DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa thú cưng này?", "Xóa", MessageBoxButtons.YesNo);
+                DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa Khách hàng này?", "Xóa", MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {
                     khachHang.XoaKhachHang(maKH.ToString());

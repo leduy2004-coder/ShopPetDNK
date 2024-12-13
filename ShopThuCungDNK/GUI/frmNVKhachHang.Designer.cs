@@ -221,7 +221,7 @@
             this.btnTim.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTim.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTim.ForeColor = System.Drawing.Color.DarkViolet;
-            this.btnTim.Location = new System.Drawing.Point(328, 6);
+            this.btnTim.Location = new System.Drawing.Point(317, 5);
             this.btnTim.Name = "btnTim";
             this.btnTim.Size = new System.Drawing.Size(143, 38);
             this.btnTim.TabIndex = 1;

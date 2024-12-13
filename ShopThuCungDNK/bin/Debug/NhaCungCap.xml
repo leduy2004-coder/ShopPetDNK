@@ -1,4 +1,4 @@
-﻿<NewDataSet>
+<NewDataSet>
   <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="NhaCungCap" msdata:UseCurrentLocale="true">
       <xs:complexType>
@@ -28,5 +28,17 @@
     <tenNhaCungCap>Công ty TNHH Thức ăn Thú cưng HAHAHA</tenNhaCungCap>
     <sdt>0912349978</sdt>
     <diaChi>TP. Đà Nẵng</diaChi>
+  </NhaCungCap>
+  <NhaCungCap>
+    <maNhaCungCap>5</maNhaCungCap>
+    <tenNhaCungCap>23</tenNhaCungCap>
+    <sdt>23</sdt>
+    <diaChi>1</diaChi>
+  </NhaCungCap>
+  <NhaCungCap>
+    <maNhaCungCap>5</maNhaCungCap>
+    <tenNhaCungCap>52</tenNhaCungCap>
+    <sdt>231</sdt>
+    <diaChi>2</diaChi>
   </NhaCungCap>
 </NewDataSet>
