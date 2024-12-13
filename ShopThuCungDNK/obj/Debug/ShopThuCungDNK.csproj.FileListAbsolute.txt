@@ -14,3 +14,19 @@ E:\THXML\ShopThuCungDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.GUI.FrmQuanLy.re
 E:\THXML\ShopThuCungDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.GUI.frmNVThuCung.resources
 E:\THXML\ShopThuCungDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.GUI.frmQLNhanVien.resources
 E:\THXML\ShopThuCungDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.GUI.frmNVKhachHang.resources
+E:\bai tap lom xml\clone\ShopPetDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.csproj.AssemblyReference.cache
+E:\bai tap lom xml\clone\ShopPetDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.GUI.frmDangNhap.resources
+E:\bai tap lom xml\clone\ShopPetDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.GUI.frmNhanVien.resources
+E:\bai tap lom xml\clone\ShopPetDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.GUI.frmNVKhachHang.resources
+E:\bai tap lom xml\clone\ShopPetDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.GUI.frmNVThuCung.resources
+E:\bai tap lom xml\clone\ShopPetDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.GUI.frmNVTrangChu.resources
+E:\bai tap lom xml\clone\ShopPetDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.GUI.frmQLNhanVien.resources
+E:\bai tap lom xml\clone\ShopPetDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.GUI.frmQuanLy.resources
+E:\bai tap lom xml\clone\ShopPetDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.Properties.Resources.resources
+E:\bai tap lom xml\clone\ShopPetDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.csproj.GenerateResource.cache
+E:\bai tap lom xml\clone\ShopPetDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.csproj.CoreCompileInputs.cache
+E:\bai tap lom xml\clone\ShopPetDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.exe
+E:\bai tap lom xml\clone\ShopPetDNK\ShopThuCungDNK\obj\Debug\ShopThuCungDNK.pdb
+E:\bai tap lom xml\clone\ShopPetDNK\ShopThuCungDNK\bin\Debug\ShopThuCungDNK.exe.config
+E:\bai tap lom xml\clone\ShopPetDNK\ShopThuCungDNK\bin\Debug\ShopThuCungDNK.exe
+E:\bai tap lom xml\clone\ShopPetDNK\ShopThuCungDNK\bin\Debug\ShopThuCungDNK.pdb
